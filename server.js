@@ -25,6 +25,7 @@ app.use(
   })
 );
 app.use(express.static('public'));
+app.use('/assets',express.static(path.join(__dirname, 'public/assets')));
 
 // Separated Routes for each Resource
 // Note: Feel free to replace the example routes below with your own
